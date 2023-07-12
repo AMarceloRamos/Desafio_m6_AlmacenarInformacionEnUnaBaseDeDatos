@@ -1,0 +1,17 @@
+<h1 class="my-2">Documentary Films</h1>
+<br>
+<ul>
+<%= link_to 'Agregar nuevo documental', '/documentary_films/new' %>
+  <% @documentary_films.each do |documentary_film| %>
+    <table class="table">
+    <tr>
+    <td>
+      <h3><%= documentary_film.name %></h3>
+      <p><%= documentary_film.synopsis %></p>
+      <p><strong>Director:</strong> <%= documentary_film.director %></p>
+   </table>
+    </tr>
+    </td>
+  <% end %>
+</ul>
+

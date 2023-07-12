@@ -1,0 +1,19 @@
+<h1 class="my-2">Series</h1>
+<br>
+<ul>
+  <%= link_to 'Agregar nueva Serie', '/series/new' %>
+  <% @series.each do |serie| %>
+
+    <table class="table">
+    <tr>
+    <td>
+      <h3><%= serie.name %></h3>
+      <p><%= serie.synopsis %></p>
+      <p><strong>Director:</strong> <%= serie.director %></p>
+    </table>
+    </tr>
+    </td>
+
+  <% end %>
+</ul>
+

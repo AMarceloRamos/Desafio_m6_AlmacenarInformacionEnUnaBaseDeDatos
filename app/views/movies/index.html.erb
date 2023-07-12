@@ -1,0 +1,20 @@
+<h1 class="my-2">Movies</h1>
+<br>
+
+<ul>
+  <%= link_to 'Agregar nueva Pelicula', '/movies/new' %>
+  <% @movies.each do |movie| %>
+    <table class="table">
+    <tr>
+    <td>
+      <h3><%= movie.name %></h3>
+      <p><%= movie.synopsis %></p>
+      <p><strong>Director:</strong> <%= movie.director %></p>
+    </td>
+      </tr>
+      </table>
+    
+  <% end %>
+  
+</ul>
+
